@@ -9,14 +9,16 @@ import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class TargetFolder {
 
-    private Date currentDate = new Date();
-    private ArrayList<Path> targetFilesList;
+    private final Date currentDate = new Date();
+    private final ArrayList<Path> targetFilesList;
     private ArrayList<Path> secondFilesList;
 
-    private Path targetPath;
+    private final Path targetPath;
     private Path secondPath;
     public TargetFolder(Path path) throws IOException{
         this.targetPath = path;
@@ -31,17 +33,16 @@ public class TargetFolder {
             Files.createDirectory(newPath);
             this.secondPath = newPath;
         } else {
-            ArrayList<Path> folderList = createFolderList(path);
-            ArrayList<Integer> idList = new ArrayList<>();
-            for (Path el: folderList) {
-                String newEl = el.toString().substring(el.toString().length() -1);
-                idList.add(Integer.parseInt(newEl));
-            }
-            Integer maxId = idList.stream().max(Integer::compare).get() + 1;
+            List<Path> folderList = createFolderList(path)
+                    .stream()
+                    .filter(x -> x.toString().contains("_part"))
+                    .collect(Collectors.toList());
 
-            Path secondPath = Path.of(folderName.replace("_part1", "_part".concat(maxId.toString())));
-            Files.createDirectory(secondPath);
-            this.secondPath = secondPath;
+            int lastId = folderList.size() + 1;
+
+            Path lastPath = Path.of(folderName.replace("_part1", "_part".concat(String.valueOf(lastId))));
+            Files.createDirectory(lastPath);
+            this.secondPath = lastPath;
         }
 
     }
@@ -74,8 +75,5 @@ public class TargetFolder {
         return pathList;
     }
 
-//    private ArrayList<Path> generateFiles() {
-//
-//    }
 
 }
