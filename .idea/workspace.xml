@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="PilotVersion">
+    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -49,11 +53,33 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Neilli/IdeaProjects/xmlcopy",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.hikandgo.Main" />
+      <module name="XmlBuilder" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.hikandgo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,5 +102,30 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PilotVersion" />
     <option name="LAST_COMMIT_MESSAGE" value="PilotVersion" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" log-message="true" type="java-wildcard-method">
+          <properties class="Builder407" method="Build">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" line="18">
+        <watch expression="builder" language="JAVA" />
+      </inline-watch>
+    </watches-manager>
   </component>
 </project>
