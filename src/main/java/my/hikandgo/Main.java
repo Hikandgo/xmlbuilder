@@ -1,6 +1,5 @@
 package my.hikandgo;
 
-import my.hikandgo.constants.Tegs407;
 import my.hikandgo.service.Builder407;
 import my.hikandgo.service.TargetFolder;
 

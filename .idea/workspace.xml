@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="Refactoring">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" afterDir="false" />
+    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="Реализация билдера для 407">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,12 +96,31 @@
       <option name="project" value="LOCAL" />
       <updated>1677704162029</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Реализация билдера для 407">
+      <created>1677780108220</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677780108220</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PilotVersion" />
-    <option name="LAST_COMMIT_MESSAGE" value="PilotVersion" />
+    <MESSAGE value="Реализация билдера для 407" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализация билдера для 407" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -109,6 +128,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="5" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.UncheckedIOException" package="java.io" />
+          <option name="timeStamp" value="52" />
         </breakpoint>
         <breakpoint enabled="true" log-message="true" type="java-wildcard-method">
           <properties class="Builder407" method="Build">
@@ -118,12 +141,15 @@
           <option name="timeStamp" value="46" />
         </breakpoint>
       </breakpoints>
+      <breakpoints-defaults>
+        <breakpoint suspend="THREAD" type="java-line" />
+      </breakpoints-defaults>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception" />
       </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
-      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" line="18">
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" line="17">
         <watch expression="builder" language="JAVA" />
       </inline-watch>
     </watches-manager>

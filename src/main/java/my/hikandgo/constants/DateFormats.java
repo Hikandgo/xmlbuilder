@@ -1,7 +1,7 @@
 package my.hikandgo.constants;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.Calendar;
 
 public enum DateFormats {
     MAIN_DATE_FORMAT ("dd/MM/yyyy"),
@@ -20,9 +20,11 @@ public enum DateFormats {
         return format;
     }
 
-    public static String currentDateGenerator(DateFormats dateFormat) {
-        Date currentDate = new Date();
+    public static String currentDateGenerator(DateFormats dateFormat, int differenceDay) {
+        differenceDay = 0;
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.DATE, differenceDay);
         SimpleDateFormat dateForm = new SimpleDateFormat(dateFormat.getFormat());
-        String newDate = dateForm.format(currentDate);
+        String newDate = dateForm.format(cal.getTime());
         return newDate;
     }}

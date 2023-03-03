@@ -1,8 +1,13 @@
 package my.hikandgo.constants;
 
 public enum Tegs407 {
+    DATE_MSG ("<ДатаСооб>", "</ДатаСооб>"),
+    DATE_REQUEST ("<ДатЗапр>", "</ДатЗапр>"),
+    DATE_GET_REQ ("<ДатПолучЗапр>", "</ДатПолучЗапр>"),
+    DATE_ORDER ("<ДатПоручФил>", "</ДатПоручФил>"),
+    DATE_PROLONG ("<ДатаПролонг>", "</ДатаПролонг>"),
+    INV_NAME ("<ИмФайлВлож>", "</ИмФайлВлож>");
 
-    DATE_MSG ("<ДатаСооб>", "</ДатаСооб>");
 
     private final String tegOpen;
     private final String tegClose;

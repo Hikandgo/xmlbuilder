@@ -25,7 +25,7 @@ public class TargetFolder {
     }
 
     private void createFolder(Path path) throws IOException {
-        String folderName = path.toString().concat("/").concat(DateFormats.currentDateGenerator((DateFormats.DIRECTORY_NAME_FORMAT)).concat("_part1"));
+        String folderName = path.toString().concat("/").concat(DateFormats.currentDateGenerator(DateFormats.DIRECTORY_NAME_FORMAT, 0)).concat("_part1");
         Path newPath = Path.of(folderName);
         if (!Files.exists(newPath)) {
             Files.createDirectory(newPath);
@@ -69,7 +69,7 @@ public class TargetFolder {
 
     private ArrayList<Path> createSecondFileList(ArrayList<Path> targetList) {
         ArrayList<Path> pathList = new ArrayList<>();
-        String date = DateFormats.currentDateGenerator(DateFormats.FILENAME_FORMAT);
+        String date = DateFormats.currentDateGenerator(DateFormats.FILENAME_FORMAT, 0);
         for (Path el: targetList) {
             if (el.getFileName().toString().contains("DI")) {
                 String elName = el.getFileName().toString();
