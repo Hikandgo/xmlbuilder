@@ -3,14 +3,14 @@ package my.hikandgo.constants;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import static java.util.Calendar.getInstance;
+
 public enum DateFormats {
     MAIN_DATE_FORMAT ("dd/MM/yyyy"),
-
     FILENAME_FORMAT ("yyyyMMdd"),
     DIRECTORY_NAME_FORMAT ("dd_MM_yyyy");
 
     private final String format;
-
 
     DateFormats(String format) {
         this.format = format;
@@ -21,10 +21,8 @@ public enum DateFormats {
     }
 
     public static String currentDateGenerator(DateFormats dateFormat, int differenceDay) {
-        differenceDay = 0;
-        Calendar cal = Calendar.getInstance();
+        Calendar cal = getInstance();
         cal.add(Calendar.DATE, differenceDay);
         SimpleDateFormat dateForm = new SimpleDateFormat(dateFormat.getFormat());
-        String newDate = dateForm.format(cal.getTime());
-        return newDate;
+        return dateForm.format(cal.getTime());
     }}
