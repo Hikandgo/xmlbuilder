@@ -93,20 +93,19 @@ public class Builder407 {
 
     public static String getNewStringDateLane(String str, String newDateString, String tegOpen, String tegClose) {
         int numberSpace = str.length() - str.replaceAll(" ", "").length();
-        String lastString = " ".repeat(numberSpace)
+
+        return " ".repeat(numberSpace)
                 .concat(tegOpen)
                 .concat(newDateString)
                 .concat(tegClose);
-
-        return lastString;
     }
 
     public static String getNewStringINC(String str) {
         int lastIndex = str.lastIndexOf("_");
-        StringBuilder strb = new StringBuilder(str);
-        strb = strb.replace(
-                (lastIndex-8), lastIndex, DateFormats.currentDateGenerator(DateFormats.FILENAME_FORMAT, 0));
-        return strb.toString();
+        StringBuilder strBuild = new StringBuilder(str);
+        strBuild.replace(
+                (lastIndex - 8), lastIndex, DateFormats.currentDateGenerator(DateFormats.FILENAME_FORMAT, 0));
+        return strBuild.toString();
     }
 
     public static void moveRenameFiles(List<Path> targetFiles, List<Path> secondFiles) throws IOException {

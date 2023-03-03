@@ -12,13 +12,11 @@ import java.util.stream.Collectors;
 
 public class TargetFolder {
 
-    private ArrayList<Path> targetFilesList;
-    private ArrayList<Path> secondFilesList;
+    private final ArrayList<Path> targetFilesList;
+    private final ArrayList<Path> secondFilesList;
 
-    private Path targetPath;
     private Path secondPath;
     public TargetFolder(Path path) throws IOException{
-        this.targetPath = path;
         createFolder(path);
         this.targetFilesList = createFileList(path);
         this.secondFilesList = createSecondFileList(this.targetFilesList);
@@ -74,25 +72,18 @@ public class TargetFolder {
             if (el.getFileName().toString().contains("DI")) {
                 String elName = el.getFileName().toString();
                 StringBuilder str = new StringBuilder(elName);
-                str = str.replace(39, 47, date);
+                str.replace(39, 47, date);
                 pathList.add(secondPath.resolve(Path.of(str.toString())));
             } else if (el.getFileName().toString().contains("INC")) {
                 String elName = el.getFileName().toString();
                 StringBuilder str = new StringBuilder(elName);
-                str = str.replace(43, 51, date);
+                str.replace(43, 51, date);
                 pathList.add(secondPath.resolve(Path.of(str.toString())));
             } else {
                 pathList.add(secondPath.resolve(Path.of(el.getFileName().toString())));
             }
         }
         return pathList;
-    }
-
-    private void createSecondFiles() throws IOException {
-
-        for (Path path: this.secondFilesList) {
-            Files.createFile(path);
-        }
     }
 
     public ArrayList<Path> getTargetFilesList() {

@@ -9,7 +9,7 @@ public enum DateFormats {
     FILENAME_FORMAT ("yyyyMMdd"),
     DIRECTORY_NAME_FORMAT ("dd_MM_yyyy");
 
-    private String format;
+    private final String format;
 
 
     DateFormats(String format) {

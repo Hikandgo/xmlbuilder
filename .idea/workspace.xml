@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="Реализация билдера для 407">
+    <list default="true" id="21ce8a9b-d31d-47d4-8fd6-d5819bedb229" name="Changes" comment="Реализация:&#10;Обновление дат и имен">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/DateFormats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/constants/Tegs407.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/Builder407.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/hikandgo/service/TargetFolder.java" afterDir="false" />
     </list>
@@ -53,7 +52,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Neilli/IdeaProjects/xmlcopy",
+    "last_opened_file_path": "C:/Users/Neilli/JavaRushTasks",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
